@@ -7,6 +7,7 @@ pipeline {
   steps
   {
   sh 'echo Hello World'
+  sh " echo hello univ"
   }
 }
 }
