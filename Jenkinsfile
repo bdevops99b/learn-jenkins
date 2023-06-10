@@ -1,16 +1,24 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'workstation'
+    }
+  }
+  environment {
+      sample_url="example.com"
+  }
   stages
   {
-  stage('One')
-  {
-  steps
-  {
-  sh 'echo Hello World'
-  sh " echo hello univ"
-  }
-}
-}
+       stage('One')
+          {
+              steps
+                 {
+                    sh 'echo Hello World'
+                    sh 'echo hello univ'
+                    sh 'echo ${sample_url}'
+                 }
+          }
+ }
 post {
  always {
       sh 'echo Post Cleanup step'
