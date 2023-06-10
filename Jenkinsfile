@@ -4,7 +4,9 @@ pipeline {
       label 'workstation'
     }
   }
-
+    triggers {
+        cron('H/1 * * * *')
+    }
    options {
           ansiColor('xterm')
       }
