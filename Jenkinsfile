@@ -5,7 +5,8 @@
 //     }
 //   }
 
-//     triggers {
+//
+ triggers {
 //         pollSCM('H/2 * * * *')
 //     }
 //    options {
