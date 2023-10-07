@@ -4,6 +4,7 @@
 //       label 'workstation'
 //     }
 //   }
+
 //     triggers {
 //         pollSCM('H/2 * * * *')
 //     }
