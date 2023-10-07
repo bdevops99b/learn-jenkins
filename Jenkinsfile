@@ -7,6 +7,7 @@
 
 
 
+
  triggers {
 //         pollSCM('H/2 * * * *')
 //     }
